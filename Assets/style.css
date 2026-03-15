@@ -240,41 +240,41 @@ header .fa-location-dot {
   flex-direction: column;
 }
 
-.footer {
+footer {
   background: rgb(53, 53, 53);
   padding-bottom: 22px;
 }
-.footer img {
+footer img {
   height: 17px;
   margin: 22px 0 0 25px;
   filter: invert(1);
 }
-.footer .text {
+footer .text {
   display: flex;
   flex-direction: column;
   padding: 16px 0 0 25px;
   gap: 7px;
 }
-.footer div {
+footer div {
   display: flex;
   flex-direction: row;
 }
-.footer .fa-solid {
+footer .fa-solid {
   align-self: center;
   color: white;
   font-size: 12px;
   margin-right: 11px;
 }
-.footer .fa-handshake-angle {
+footer .fa-handshake-angle {
   margin-right: 6.5px;
 }
-.footer h1 {
+footer h1 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   color: white;
 }
-.footer p {
+footer p {
   color: white;
   font-family: Roboto;
   font-weight: 400;
