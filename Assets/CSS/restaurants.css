@@ -51,7 +51,7 @@ header .fa-solid {
 .menu {
   display: flex;
   position: relative;
-  margin-top: -75px;
+  margin-top: -35px;
   background: rgb(246, 246, 246);
   border-radius: 35px 35px 0 0;
   z-index: 5;
@@ -88,6 +88,7 @@ header .fa-solid {
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+  transition: opacity 0.2s;
 }
 .menu .fa-solid:hover {
   opacity: 1;
@@ -112,7 +113,18 @@ header .fa-solid {
   height: 3px;
   background-color: rgb(153, 226, 208);
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .menu .plats article {
+  opacity: 0;
   display: flex;
   background-color: white;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
@@ -122,6 +134,37 @@ header .fa-solid {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  animation: fadeIn 1s forwards;
+}
+.menu .plats article:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+.menu .plats article:nth-of-type(2) {
+  animation-delay: 0.3s;
+}
+.menu .plats article:nth-of-type(3) {
+  animation-delay: 0.5s;
+}
+.menu .plats article:nth-of-type(4) {
+  animation-delay: 0.7s;
+}
+.menu .plats article:nth-of-type(5) {
+  animation-delay: 0.9s;
+}
+.menu .plats article:nth-of-type(6) {
+  animation-delay: 1.1s;
+}
+.menu .plats article:nth-of-type(7) {
+  animation-delay: 1.3s;
+}
+.menu .plats article:nth-of-type(8) {
+  animation-delay: 1.5s;
+}
+.menu .plats article:nth-of-type(9) {
+  animation-delay: 1.7s;
+}
+.menu .plats article:nth-of-type(10) {
+  animation-delay: 1.9s;
 }
 .menu .plats article:hover .check {
   margin-right: 0;
@@ -195,11 +238,19 @@ header .fa-solid {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   margin-bottom: 40px;
+  transition: filter 0.3s, box-shadow 0.3s;
+}
+.menu button:hover {
+  filter: brightness(1.2);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35);
 }
 
 footer {
   background: rgb(53, 53, 53);
   padding-bottom: 22px;
+}
+footer .image-and-text {
+  flex-direction: column;
 }
 footer img {
   height: 17px;

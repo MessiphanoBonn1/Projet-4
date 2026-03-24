@@ -17,7 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../Assets/restaurants.css" />
+    <link rel="stylesheet" href="../Assets/CSS/restaurants.css" />
+    <link rel="stylesheet" href="../Assets/CSS/restaurants-responsive.css" />
   </head>
 
   <body>
@@ -30,21 +31,25 @@
       </div>
       <div class="logo">
         <img
-          src="../Assets/Images et textes Ohmyfood/images/logo/ohmyfood.png"
+          src="../Assets/Images_et_textes_Ohmyfood/images/logo/ohmyfood.png"
+          alt="logo du site"
         />
       </div>
     </header>
     <main>
       <section class="image">
         <img
-          src="../Assets/Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          src="../Assets/Images_et_textes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
           alt="Image de couverture pour le premier restaurant"
         />
       </section>
       <section class="menu">
-        <h1>À la française</h1>
-        <div class="heart">
-          <i class="fa-solid fa-heart"></i> <i class="fa-regular fa-heart"></i>
+        <div class="heart-and-text">
+          <h1 id="nom-restaurant">À la française</h1>
+          <div class="heart">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
+          </div>
         </div>
         <div class="plats">
           <p class="p">ENTRÉES</p>
@@ -150,26 +155,29 @@
             <div class="check"><i class="fa-solid fa-circle-check"></i></div>
           </article>
         </div>
-        <button><p class="button">Commander</p></button>
+        <button>Commander</button>
       </section>
     </main>
     <footer>
-      <div>
-        <img
-          src="../Assets/Images et textes Ohmyfood/images/logo/ohmyfood.png"
-        />
-      </div>
-      <div class="text">
-        <div>
-          <i class="fa-solid fa-utensils"></i>
-          <h1>Proposer un restaurant</h1>
+      <div class="image-and-text">
+        <div class="image-footer">
+          <img
+            src="../Assets/Images_et_textes_Ohmyfood/images/logo/ohmyfood.png"
+            alt="logo du site"
+          />
         </div>
-        <div>
-          <i class="fa-solid fa-handshake-angle"></i>
-          <h1>Devenir partenaire</h1>
+        <div class="text">
+          <div>
+            <i class="fa-solid fa-utensils"></i>
+            <h1>Proposer un restaurant</h1>
+          </div>
+          <div>
+            <i class="fa-solid fa-handshake-angle"></i>
+            <h1>Devenir partenaire</h1>
+          </div>
+          <p>Mentions légales</p>
+          <p>Contact</p>
         </div>
-        <p>Mentions légales</p>
-        <p>Contact</p>
       </div>
     </footer>
   </body>

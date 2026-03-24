@@ -4,6 +4,48 @@
   box-sizing: border-box;
 }
 
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 3s forwards;
+}
+
+.spinner {
+  width: 200px;
+  height: auto;
+  animation: rotateImage 1s linear infinite;
+}
+
 header {
   width: 100%;
 
@@ -70,20 +112,32 @@ header {
     padding-bottom: 27px;
   }
 
-  a {
-    margin-bottom: 57px;
+  .btn-explorer {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 40px;
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(340deg, #9356dc -11.44%, #ff79da 123.93%);
+    color: white;
+    font-size: 16px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition:
+      filter 0.3s,
+      box-shadow 0.3s;
+  }
 
-    button {
-      width: 218px;
-      height: 50px;
-      border-radius: 25px;
-      border: none;
-      background: linear-gradient(340deg, #9356dc -11.44%, #ff79da 123.93%);
-      color: white;
-      font-size: 16px;
-      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-      cursor: pointer;
-    }
+  .btn-explorer:hover {
+    filter: brightness(1.2);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35);
   }
 }
 
@@ -99,6 +153,13 @@ header {
     font-weight: 700;
     font-size: 24px;
     padding: 48px 0 0 20px;
+  }
+
+  .conteneur-explication {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
   }
 
   .explication {
@@ -164,17 +225,45 @@ header {
   gap: 18px;
   padding-bottom: 66px;
 
+  .conteneur {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
   h1 {
     font-family: Roboto;
     font-weight: 700;
     font-size: 24px;
     padding: 54px 0 7px 20px;
     align-self: flex-start;
+    width: 80%;
+  }
+
+  .conteneur-cards {
+    width: 90.67%;
+    gap: 18px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurant-1-2 {
+    width: 100%;
+    gap: 18px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurant-3-4 {
+    width: 100%;
+    gap: 18px;
+    flex-direction: column;
+    align-items: center;
   }
 
   a {
     text-decoration: none;
-    width: 90.67%;
+    width: 100%;
   }
 
   .card {
@@ -243,6 +332,7 @@ header {
   }
 
   .fa-solid {
+    z-index: 7;
     position: relative;
     left: 49px;
     opacity: 0;
@@ -250,6 +340,7 @@ header {
     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     background-clip: text;
     color: transparent;
+    transition: opacity 0.2s;
   }
 
   .fa-solid:hover {
@@ -270,6 +361,10 @@ header {
 footer {
   background: rgba(53, 53, 53, 1);
   padding-bottom: 22px;
+
+  .image-and-text {
+    flex-direction: column;
+  }
 
   img {
     height: 17px;
@@ -304,6 +399,12 @@ footer {
     font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
+    color: white;
+  }
+
+  a {
+    font-family: Roboto;
+    text-decoration: none;
     color: white;
   }
 

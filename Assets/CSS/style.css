@@ -93,6 +93,12 @@ header .fa-location-dot {
   font-size: 24px;
   padding: 48px 0 0 20px;
 }
+.fonctionnement .conteneur-explication {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
 .fonctionnement .explication {
   display: flex;
   align-self: center;
@@ -149,16 +155,40 @@ header .fa-location-dot {
   gap: 18px;
   padding-bottom: 66px;
 }
+#restaurants .conteneur {
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
 #restaurants h1 {
   font-family: Roboto;
   font-weight: 700;
   font-size: 24px;
   padding: 54px 0 7px 20px;
   align-self: flex-start;
+  width: 80%;
+}
+#restaurants .conteneur-cards {
+  width: 90.67%;
+  gap: 18px;
+  flex-direction: column;
+  align-items: center;
+}
+#restaurants .restaurant-1-2 {
+  width: 100%;
+  gap: 18px;
+  flex-direction: column;
+  align-items: center;
+}
+#restaurants .restaurant-3-4 {
+  width: 100%;
+  gap: 18px;
+  flex-direction: column;
+  align-items: center;
 }
 #restaurants a {
   text-decoration: none;
-  width: 90.67%;
+  width: 100%;
 }
 #restaurants .card {
   display: flex;
@@ -219,6 +249,7 @@ header .fa-location-dot {
   height: 21px;
 }
 #restaurants .fa-solid {
+  z-index: 7;
   position: relative;
   left: 49px;
   opacity: 0;
@@ -227,6 +258,7 @@ header .fa-location-dot {
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+  transition: opacity 0.2s;
 }
 #restaurants .fa-solid:hover {
   opacity: 1;
@@ -243,6 +275,9 @@ header .fa-location-dot {
 footer {
   background: rgb(53, 53, 53);
   padding-bottom: 22px;
+}
+footer .image-and-text {
+  flex-direction: column;
 }
 footer img {
   height: 17px;
@@ -272,6 +307,11 @@ footer h1 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
+  color: white;
+}
+footer a {
+  font-family: Roboto;
+  text-decoration: none;
   color: white;
 }
 footer p {

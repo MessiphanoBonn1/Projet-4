@@ -1,0 +1,116 @@
+@media (min-width: 1024px) {
+  header .logo {
+    height: 96px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  header .logo img {
+    height: 34.2px;
+    width: 200px;
+  }
+  .presentation h1 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 30px 0 18px 0;
+  }
+  .presentation p {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 18px;
+    padding-bottom: 18px;
+  }
+  .presentation a {
+    margin-bottom: 30px;
+  }
+  .fonctionnement {
+    margin: auto;
+    margin-bottom: 43px;
+    max-width: 1053px;
+  }
+  .fonctionnement h1 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 50px 0 25px 0;
+  }
+  .fonctionnement .conteneur-explication {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+  .fonctionnement .explication {
+    width: 32%;
+    min-width: 277px;
+  }
+  .fonctionnement p {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  #restaurants h1 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 50px 0 28px 0;
+  }
+  #restaurants .conteneur {
+    margin: auto;
+    max-width: 1053px;
+  }
+  #restaurants .conteneur-cards {
+    margin: auto;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1053px;
+    align-self: center;
+    justify-self: center;
+    gap: 50px;
+    padding: 0 1px 0 1px;
+  }
+  #restaurants .restaurant-1-2 {
+    gap: 100px;
+    flex-direction: row;
+  }
+  #restaurants .restaurant-3-4 {
+    gap: 100px;
+    flex-direction: row;
+  }
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 57px 0 30px 0;
+  }
+  footer .image-and-text {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  footer img {
+    width: 139px;
+    height: 27px;
+    margin: 0;
+  }
+  footer .image-footer {
+    width: 200px;
+  }
+  footer .Mentions {
+    margin-left: 25px;
+  }
+  footer a {
+    font-family: Roboto;
+    text-decoration: none;
+    color: white;
+  }
+  footer .text {
+    flex-direction: row;
+    width: 48%;
+    padding: 0;
+    height: 19px;
+  }
+}/*# sourceMappingURL=acceuil-responsive.css.map */
